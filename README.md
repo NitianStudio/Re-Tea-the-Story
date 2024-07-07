@@ -1,4 +1,4 @@
-# Tea-the-Story
+# Re-Tea-the-Story
 
 “茶风·纪事”是Minecraft的一个中国风模组。
 

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "reteastory",
+  "version": "${version}",
+
+  "name": "reteastory",
+  "description": "Re Tea the story",
+  "authors": [],
+  "contact": {},
+
+  "license": "BSD-3-Clause License for Code",
+  "icon": "ts.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.nitianstudio.reteastory.fabric.ReteastoryFabric"
+    ]
+  },
+  "mixins": [
+    "reteastory.mixins.json",
+    "reteastory-common.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": ">=1.21"
+  }
+}
