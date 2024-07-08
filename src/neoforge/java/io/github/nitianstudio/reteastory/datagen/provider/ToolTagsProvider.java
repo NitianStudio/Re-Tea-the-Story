@@ -21,8 +21,7 @@ public class ToolTagsProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.@NotNull Provider provider) {
-        tag(BlockTags.MINEABLE_WITH_AXE).add(RegistryBlock.WOODEN_BOWL.get()).replace(false);
-
+        tag(BlockTags.MINEABLE_WITH_AXE).add(RegistryBlock.WOODEN_BOWL.get());
     }
 
     @Override
