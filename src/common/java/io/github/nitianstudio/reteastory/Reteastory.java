@@ -1,5 +1,7 @@
 package io.github.nitianstudio.reteastory;
 
+import dev.architectury.registry.registries.DeferredRegister;
+import net.minecraft.world.item.Item;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,7 +15,7 @@ public class Reteastory
 
 
 	public static void init() {
-		
+
 	}
 
 	public static void initClient() {
