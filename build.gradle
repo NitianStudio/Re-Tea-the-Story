@@ -26,6 +26,9 @@ subprojects {
         main {
             java.setSrcDirs([this.rootProject.file("src/${project.name}/java")])
             resources.setSrcDirs([this.rootProject.file("src/${project.name}/resources")])
+            if (project.name == "common") {
+                resources.srcDirs += this.rootProject.file("src/generated")
+            }
         }
     }
 }

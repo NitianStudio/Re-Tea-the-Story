@@ -11,11 +11,9 @@ import java.util.function.Supplier;
 @Mod(Reteastory.MOD_ID)
 public class ReteastoryNeoforge {
     public ReteastoryNeoforge() {
-        if (!DatagenModLoader.isRunningDataGen()) {
-            Reteastory.init();
-            if (FMLEnvironment.dist == Dist.CLIENT) {
-                run(() -> Reteastory::initClient);
-            }
+        Reteastory.init();
+        if (FMLEnvironment.dist == Dist.CLIENT) {
+            run(() -> Reteastory::initClient);
         }
     }
 

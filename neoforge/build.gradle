@@ -3,8 +3,17 @@ plugins {
 
 }
 
+File generatedSources = rootProject.file("src/generated")
+
 loom {
     accessWidenerPath = project(":common").loom.accessWidenerPath
+    runs {
+        data {
+            data()
+            programArgs "--all", "--mod", "${archives_base_name}"
+            programArgs "--output", generatedSources.absolutePath
+        }
+    }
 }
 
 architectury {
