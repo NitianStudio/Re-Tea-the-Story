@@ -4,8 +4,10 @@ architectury {
     }
 }
 
+
 loom {
-    accessWidenerPath = file("src/main/resources/reteastory.accessWidener")
+
+    accessWidenerPath = this.rootProject.file("src/common/resources/reteastory.accessWidener")
 }
 
 dependencies {

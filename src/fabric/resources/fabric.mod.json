@@ -4,8 +4,8 @@
   "version": "${version}",
 
   "name": "reteastory",
-  "description": "Re Tea the story",
-  "authors": [],
+  "description": "${description}",
+  "authors": ["baka4n", "Copy-Mc-Mod-Team", "NitianStudio", "RoitoLeonine", "Gloridifice", "MalayP"],
   "contact": {},
 
   "license": "BSD-3-Clause License for Code",

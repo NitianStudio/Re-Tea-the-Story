@@ -1,9 +1,10 @@
 plugins {
     id "com.github.johnrengelman.shadow" version "8.1.1"
+
 }
 
 loom {
-
+    accessWidenerPath = project(":common").loom.accessWidenerPath
 }
 
 architectury {
@@ -32,9 +33,12 @@ dependencies {
 
 processResources {
     inputs.property "version", project.version
+    String name = project.name
+    inputs.property "description", name.replaceAll('-', ' ')
 
     filesMatching("META-INF/neoforge.mods.toml") {
-        expand "version": project.version
+        expand "version": project.version,
+                "description": name.replaceAll('-', ' ')
     }
 }
 

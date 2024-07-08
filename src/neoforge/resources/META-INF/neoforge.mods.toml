@@ -1,0 +1,29 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="BSD-3-Clause License for Code"
+issueTrackerURL=""
+[[mods]]
+modId="reteastory"
+version="${version}"
+displayName="Re-Tea the Story"
+displayURL=""
+logoFile="ts.png"
+credits=""
+authors="baka4n, NitianStudio, Copy-Mc-Mod-Team, RoitoLeonine, Gloridifice, MalayP"
+description='''${description}'''
+[[mixins]]
+config = "reteastory.mixins.json"
+[[mixins]]
+config = "reteastory-common.mixins.json"
+[[dependencies.reteastory]]
+modId="neoforge"
+type="required"
+versionRange="[21.0.0-beta,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.reteastory]]
+modId="minecraft"
+type="required"
+versionRange="[1.21,1.21.1)"
+ordering="NONE"
+side="BOTH"
