@@ -14,7 +14,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "io.github.nitianstudio.reteastory.fabric.ReteastoryFabric"
+      "io.github.nitianstudio.reteastory.Reteastory::init"
+    ],
+    "client": [
+      "io.github.nitianstudio.reteastory.Reteastory::initClient"
     ]
   },
   "mixins": [
